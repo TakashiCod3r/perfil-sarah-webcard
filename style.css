@@ -10,15 +10,16 @@ body {
     margin: 0;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background-color: #0e1538;
+    overflow-x: hidden;
+   height: auto;
 
 }
 
 
 .header {
     width: 100vw;
-    height: 35vh;
+    height: 25vh;
     overflow: hidden;
 }
 
@@ -162,7 +163,7 @@ a:hover {
     margin-right: auto;
 }
 
-ul li {
+.generos ul li {
     list-style: none;
     color: #fff;
     display: inline-flex;
@@ -184,12 +185,16 @@ ul li:hover {
 .nick h2{
     font-size: 2em;
     padding: 0;
+   margin: 10px;
 }
 .nick{
     padding: 0;
 margin-top: -0.7em;
 }
 
+.nickname{
+    margin: 2px;
+}
 h3{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     color: #fff;
@@ -198,12 +203,30 @@ h3{
     font-style: italic;
     font-weight: 100;
 }
-.social {
+.social ul li {
+    list-style: none;
+    color: #fff;
+    display: inline-flex;
+    padding: 0.5em;
+    border: 2px solid #f8b2ed;
+    border-radius: 2em;
+  margin: 2px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+
+}
+ul{
+    margin: 10px;
+    padding: 0;
+}
+
+.social{
     text-align: center;
     align-items: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 1px;
 }
 
 .social img{
@@ -212,17 +235,18 @@ padding: 0px;
 align-items: center;
 text-align: center;
 align-content: center;
+margin-top: 2px;
 
 }
 
 
 .social ul li{
-    margin: 1em;
+    margin: 0.5em;
     align-items: center;
     text-align: center;
     align-content: center;
     border: none;
-    padding: 10px;
+    padding: 1px;
     cursor: pointer;
 
     
@@ -234,4 +258,135 @@ align-content: center;
     transform: scale(1.2);
     transition: all 0.5s;
     background: rgba(rgba(55, 0, 255, 0.158), green, blue, alpha);
+}
+
+
+
+
+   .container-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+   }
+    
+.card{
+    background-image: linear-gradient(#333, #333);
+overflow: hidden;
+border-radius:16px;
+max-width: 360px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: all .5s;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-bottom: 200px;
+}
+.card:hover{
+    background-image: linear-gradient(#672abf, #380e74);
+
+}
+
+.card .card-img{
+    background-image: url(./imagem/cartastaff.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+}
+.card:hover .card-img{
+    opacity: 1;
+    width: 440px;
+   
+
+}
+.card-img span {
+    background-color: rgba(51, 51, 51, 0.486);
+    border-radius: 15px;
+
+}
+.card .card-img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+
+.card .content-card{
+    padding: 0 20px ;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+
+}
+
+.card:hover .content-card{
+    padding: 20px;
+    height: 260px;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card .content-card p{
+    margin-bottom: 0;
+}
+
+.card .content-card .title-card{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .content-card .desc{
+    font-size: 20px;
+    font-weight: 100;
+    opacity: .7;
+    font-style: italic;
+}
+
+.card .arrow-card{
+padding: 15px;
+font-size: 28px;
+transform: rotate(-180deg);
+transition:all .5s;
+}
+
+.card:hover .arrow-card{
+    transform: rotate(0);
+}
+.card .arrow-card span{
+    font-size: 24px;
+}
+
+.spotify{
+
+    width: 400px;
+    height: 370px;
+    margin-bottom: 100px;
+    margin-left: 200px ;
+   
+
+}
+
+.spotify:hover{
+
+}
+.midias {
+    display: flex;
+
+
 }
