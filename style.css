@@ -61,7 +61,7 @@ body {
     position: absolute;
     inset: -10px 50px;
     transition: 0.5;
-    background: linear-gradient(315deg, #00ccff, #d400d4);
+    background: linear-gradient(315deg, #00ccff, #f302f3);
     animation: animate 4s linear infinite;
 }
 
@@ -382,9 +382,7 @@ transition:all .5s;
 
 }
 
-.spotify:hover{
 
-}
 .midias {
     display: flex;
 
